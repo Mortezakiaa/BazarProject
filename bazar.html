@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="swiper js/swiper bundle min.css">
+    <link rel="stylesheet" href="bootstrap 5.2/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cafe Bazar</title>
+</head>
+<body dir="rtl" class="bg">
+
+    <header class="header">
+        <div class="container padd" id="header-parent">
+            <nav class="d-flex flex-column gap-4">
+                <div class="h-100 d-flex justify-content-between align-items-center marg">
+                    <div class="menu-right-side d-flex align-items-center h-100" id="menu-right-side">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="images/bazaar-logo.svg" alt="ads">
+                            </a>
+                        </div>
+                        <ul class="items d-flex list-unstyled align-items-center h-100">
+                           <li class="position-relative h-100 d-flex flex-column justify-content-center">
+                                <a href="#" class="items-active-link" id="program-link">برنامه</a>
+                                <div class="tab-item position-absolute"></div>
+                                <div class="menu-fade d-flex flex-column p-2 gap-1 fade" id="program-menu">
+                                    <a href="#" class="d-flex justify-content-between align-items-center px-2 py-3 menu-fade-actived">
+                                        <span>برای شما</span><i class="fa fa-angle-left"></i>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-between align-items-center px-2 py-3">
+                                        <span>دسته‌بندی‌‌ها</span><i class="fa fa-angle-left"></i>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-between align-items-center px-2 py-3">
+                                        <span>کودک</span><i class="fa fa-angle-left"></i>
+                                    </a>
+                                </div>
+                           </li>
+
+                           <li>
+                                <a href="#" id="game-link">بازی</a>
+                                <div class="menu-fade d-flex flex-column fade p-2 gap-1" id="game-menu">
+                                    <a href="#" class="d-flex justify-content-between align-items-center px-2 py-3">
+                                        <span>برای شما</span><i class="fa fa-angle-left"></i>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-between align-items-center px-2 py-3">
+                                        <span>دسته‌بندی‌‌ها</span><i class="fa fa-angle-left"></i>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-between align-items-center px-2 py-3">
+                                        <span>کودک</span><i class="fa fa-angle-left"></i>
+                                    </a>
+                                </div>
+                           </li>
+
+                           <li>
+                            <a href="#">پشتیبانی</a>
+                           </li>
+
+                           <li>
+                            <a href="#" id="other-link">سایر</a>
+                            <div class="menu-fade d-flex flex-column fade p-2 gap-1" id="other-menu">
+                                <a href="#" class="d-flex justify-content-between align-items-center px-2 py-3">
+                                    <span>توسعه‌دهندگان بازار</span><i class="fa fa-angle-left"></i>
+                                </a>
+                                <a href="#" class="d-flex justify-content-between align-items-center px-2 py-3">
+                                    <span>تبلیغات در بازار</span><i class="fa fa-angle-left"></i>
+                                </a>
+                            </div>
+                           </li>
+                        </ul>
+                    </div>
+                    <div class="menu-left-side d-flex align-items-center gap-3 h-100">
+                        <a href="#" class="border-0 rounded p-1 burger-btn" id="drop-menu-btn">
+                            <svg width="24" height="24">
+                                <path class="d-none tr-fade" id="close-path" d="M18.78 5.22a.728.728 0 010 1.043L13.043 12l5.737 5.737a.728.728 0 010 1.043.728.728 0 01-1.043 0L12 13.043 6.263 18.78a.728.728 0 01-1.043 0 .728.728 0 010-1.043L10.957 12 5.22 6.263a.728.728 0 010-1.043.728.728 0 011.043 0L12 10.957l5.737-5.737a.728.728 0 011.043 0z" fill="#20222A"></path>
+                                <path class="tr-fade" id="open-path" d="M3.643 6.273h16.714A.631.631 0 0021 5.636.631.631 0 0020.357 5H3.643A.631.631 0 003 5.636c0 .358.281.637.643.637zm16.714 5.09H3.643A.631.631 0 003 12c0 .358.281.636.643.636h16.714A.631.631 0 0021 12a.631.631 0 00-.643-.636zm0 6.364H3.643a.631.631 0 00-.643.637c0 .358.281.636.643.636h16.714a.631.631 0 00.643-.636.631.631 0 00-.643-.637z" fill="#20222A"></path>
+                            </svg>
+                        </a>
+
+                        <div class="input-group">
+                            <span class="input-group-text" id="span-group">
+                                <i class="fa fa-search"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="جستجودربازار" id="form-group">
+                        </div>
+
+                        <a href="#" class="user-link px-2 py-1 rounded-circle" title="ورود به بازار">
+                            <svg width="16" height="16">
+                                <path d="M8 8c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4z" fill="#9da0af"></path>
+                            </svg>
+                        </a>
+                        
+                        <a href="#" class="border-0 rounded px-3 py-2 btn-green">دانلودبازار</a>
+                        
+                        <div dir="ltr" class="dis-none">
+                            <a href="#" class="p-1 rounded lang-link">
+                                <svg width="24" height="24"  id="lang-link">
+                                <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="#757575"></path>
+                                </svg>
+                            </a>
+                            <div class="menu-fade fade d-flex flex-column p-2 gap-1" id="lang-menu">
+                                <a href="#" class="d-flex justify-content-between align-items-center px-2 py-3">
+                                    <span>English version</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-sec-2 d-flex w-100" id="menu-sec-2">
+                    <div class="d-flex flex-column align-items-center text-center w-100 h-100">
+                        <a href="#" class="color-green">برای شما</a>
+                        <div class="tab-item-1"></div>
+                    </div>
+                    <div class="w-100 text-center h-100">
+                        <a href="#" class="color-2a h-100">
+                            دسته‌بندی‌‌ها
+                        </a>
+                    </div>
+                    <div class="w-100 text-center h-100">
+                        <a href="#" class="color-2a h-100">
+                            کودک
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="burger-menu fade" id="burger-menu">
+        <div class="burger-menu-content d-flex flex-column container-fluid">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/bazaar-logo.svg" alt="ads">
+                </a>
+            </div>
+
+            <div class="menu-content">
+                <a href="#" class="d-flex justify-content-between align-items-center color-2a p-2">
+                    <span>توسعه‌دهندگان بازار</span><i class="fa fa-angle-left"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between align-items-center color-2a p-2">
+                    <span>فرصت‌های شغلی</span><i class="fa fa-angle-left"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between align-items-center color-2a p-2">
+                    <span>نشان دریافت از بازار</span><i class="fa fa-angle-left"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between align-items-center color-2a p-2">
+                    <span>شرایط استفاده</span><i class="fa fa-angle-left"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between align-items-center color-2a p-2">
+                    <span>حریم خصوصی</span><i class="fa fa-angle-left"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between align-items-center color-2a p-2">
+                    <span>پشتیبانی</span><i class="fa fa-angle-left"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between align-items-center color-2a p-2">
+                    <span>تبلیغات در بازار</span><i class="fa fa-angle-left"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between align-items-center color-2a p-2">
+                    <span>بلاگ بازار</span><i class="fa fa-angle-left"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between align-items-center color-2a p-2">
+                    <span>خبرها و بیانیه‌های بازار</span><i class="fa fa-angle-left"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between align-items-center color-2a p-2">
+                    <span>بلاگ فنی بازار</span><i class="fa fa-angle-left"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between align-items-center color-2a p-2">
+                    <span>درباره ما</span><i class="fa fa-angle-left"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between align-items-center color-2a p-2">
+                    <span>تماس با ما</span><i class="fa fa-angle-left"></i>
+                </a>
+            </div>
+
+            <div class="burger-menu-social-media d-flex gap-4 justify-content-center mt-3 align-items-center px-2">
+                <a href="#" class="color-97">
+                    <i class="fa fa-linkedin fs-4"></i>
+                </a>
+                <a href="#" class="color-97">
+                    <i class="fa fa-instagram fs-4"></i>
+                </a>
+                <a href="#" class="color-97">
+                    <i class="fa fa-twitter fs-4"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main class="bg-main">
+        <div class="container" id="main-parent">
+            <div class="programs mt-4 rounded-3 py-3">
+                <span class="me-4">برنامه‌ها</span>
+            </div>
+
+            <div class="partial-program rounded-3 mt-3">
+                <div class="partial-head parts-bb d-flex justify-content-between align-items-center p-3">
+                    <span>برنامه‌های کاربردی</span>
+                    <a href="#" class="d-flex align-items-center gap-2 color-2a link-green">
+                        <span>بیشتر</span><i class="fa fa-angle-left mt-1"></i>
+                    </a>
+                </div>
+                
+                <div class="swiper swipers px-3 py-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/ir.divar-b3aa0567-2cf6-4f32-a442-2d36724bea97_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">دیوار</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">خرید</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.sibche.aspardproject.app_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">آپ (خدمات بانکی، خلافی خودرو، سجام)</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/ir.balad_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">بلد — نقشه‌ و ‌مسیریاب</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">رفت و آمد </div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 p-2 slide-tr">  
+                                    <img class="rounded-5" src="images/ir.mci.ecareapp_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">همراه من (اپلیکیشن رسمی همراه اول)</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 p-2 slide-tr">  
+                                    <img class="rounded-5" src="images/ir.itoll.mycarapp-f081a516-f49d-47ff-b024-c8f6a86afe5b_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">آیتول (خلافی خودرو، بیمه، عوارض)</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 p-2 slide-tr">  
+                                    <img class="rounded-5" src="images/ir.paxit-b7825a83-adde-4b6c-b025-bd2719a99b3b_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">پاکسیت: خرید گیفت کارت بازی و برنامه</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">خرید</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 p-2 slide-tr">  
+                                    <img class="rounded-5" src="images/ir.pindo.fletcher-b55c3443-c03a-489d-a722-17c70719cb3a_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">پیندو | خرید و فروش بدون واسطه کالا</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">خرید</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 p-2 slide-tr">  
+                                    <img class="rounded-5" src="images/com.instagram.lite-6c51f1eb-f2f2-44c6-b908-b677543ae6cb_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Instagram Lite – اینستاگرام لایت</div>
+                                    <div class="text-muted px-1 pb-2 fs-75">شبکه‌های اجتماعی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 p-2 slide-tr">  
+                                    <img class="rounded-5" src="images/ir.shahbaz.SHZToolBox-d47f6cbf-50e2-4fa6-b8a2-1f4c654113ac_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">جعبه ابزار</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 p-2 slide-tr">  
+                                    <img class="rounded-5" src="images/com.intsig.camscanner-e12d6d41-6c11-46ca-95ed-f5df3830e5a1_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">CamScanner - PDF Scanner App</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 p-2 slide-tr">  
+                                    <img class="rounded-5" src="images/com.shatelland.namava.mobile-7882c3f4-66ae-453a-8c12-a06aa6b898b6_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">نماوا - تماشای آنلاین فیلم و سریال</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">سرگرمی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 p-2 slide-tr">  
+                                    <img class="rounded-5" src="images/com.mtni.myirancell_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">ایرانسل من</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 p-2 slide-tr">  
+                                    <img class="rounded-5" src="images/com.mxtech.videoplayer.ad-59f0aba4-8d62-4154-b7fc-53b44940078c_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">MX Player</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">عکاسی و ویدیو</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 p-2 slide-tr">  
+                                    <img class="rounded-5" src="images/com.mobiliha.badesaba-12243158-35cd-42ab-a67a-def5c80f4a65_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">تقویم اذان گو بادصبا</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">مذهبی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 p-2 slide-tr">  
+                                    <img class="rounded-5" src="images/com.dotin.wepod-36b7a6e5-ed88-4590-ab3e-8811ed799168_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">ویپاد | تَرابانک پاسارگاد</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+                        </div>
+                                               
+                        <div class="swiper-button-prev">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="fa fa-angle-left"></i>
+                        </div>                      
+                </div>
+            </div>
+
+            <div class="partial-program rounded-3 mt-3">
+                <div class="partial-head parts-bb d-flex justify-content-between align-items-center p-3">
+                    <span>برنامه‌های رسمی بانک‌های کشور</span>
+                    <a href="#" class="d-flex align-items-center gap-2 color-2a link-green">
+                        <span>بیشتر</span><i class="fa fa-angle-left mt-1"></i>
+                    </a>
+                </div>
+                
+                <div class="swiper swipers px-3 py-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.pmb.mobile-13c4b8a7-0398-4bb1-a822-eaa2b995671a_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">همراه بانک ملت</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/mob.banking.android.sepah_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">همراه بانک سپه</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100">  
+                                    <img class="rounded-5 p-2" src="images/ir.bmi.bam.nativeweb_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">همراه بام ملی</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.isc.bsinew-f7fa7d28-3d46-48d2-b85b-6cbb20ac584b_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">همراه بانک صادرات ایران</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/ir.tejaratbank.tata.mobile.android.tejarat_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">همراه بانک تجارت</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.citydi.hplus-229914e4-ecc8-4bce-ab22-6acf23fc7c0a_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">همراه شهر پلاس</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.bki.mobilebanking.android_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">همراه بانک کشاورزی</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.ada.mbank.mehr_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">همراه‌بانک قرض‌الحسنه مهر ایران</div>
+                                    <div class="text-muted px-1 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/digital.neobank-5e29ecb9-8916-4bfc-b4a3-5958020c34c2_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">بانکینو</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/mob.banking.android.pasargad_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">همراه بانک پاسارگاد (موبایل بانک)</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.hafizco.mobilebanksina-6ddf2af2-ed31-48c6-aec6-9fd423a568c5_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">موبایل بانک سینا</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/co.nilin.izmb_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">همراه بانک ایران زمین</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/mob.banking.android.resalat_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">همراه بانک قرض الحسنه رسالت</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/mob.banking.android.gardesh-73f8c52f-0e2e-489f-a431-3de2bda494bc_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">موبایل بانک گردشگری</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/ir.mobillet.app-e7c1b760-b66d-48b1-a349-a72478312efc_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">موبایلت - همراه‌بانک سامان</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+                            
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.postbank.mb-43bad7e2-ec19-412a-9cbb-16b3d5ae1a35_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">همراه بانک پست بانک</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">امور مالی</div>  
+                                </a>       
+                            </div>
+                        </div>
+                                               
+                        <div class="swiper-button-prev">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="fa fa-angle-left"></i>
+                        </div>                      
+                </div>
+            </div>
+
+            <div class="partial-program rounded-3 mt-3">
+                <div class="partial-head parts-bb d-flex justify-content-between align-items-center p-3">
+                    <span>کودکانه‌های بازار</span>
+                    <a href="#" class="d-flex align-items-center gap-2 color-2a link-green">
+                        <span>بیشتر</span><i class="fa fa-angle-left mt-1"></i>
+                    </a>
+                </div>
+                
+                <div class="swiper swipers px-3 py-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.farad.entertainment.kids_animal-b9f17686-b667-41dc-b466-4b55ca1d0778_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">آقای قوقولی | صدای حیوانات</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">کودک</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.greenteagames.catracing3d-5e93bb7f-4b1a-4b88-9eae-a9ad66460892_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Cat Run: Kitty Runner Game</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">کودک</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100">  
+                                    <img class="rounded-5 p-2" src="images/air.com.PrincessRoomCleanup_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Princess room cleanup</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">تفننی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.outfit7.mytalkingtomfriends-ab1c43bc-e40d-49fd-99b6-4be53e1dd3f7_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">My Talking Tom Friends – دوستان تام سخنگو</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">کودک</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.orange.kidspiano.music.songs-bae85b59-3df2-4087-9e5a-8131ef073ddb_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Piano Kids - Music & Songs – پیانو برای کودکان</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">کودک</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.royagaran.happinesstrain_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">قطار شادی</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">کودک</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.gokids.transportbuilding-47e4c9f8-2859-4ad3-86ad-4e69297d5b5e_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Truck games for kids – کامیون برای بچه‌ها</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">کودک</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.peykasa.afarinak.afarinakapp-a6a59253-bac0-4696-9c60-f8a02166cb78_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">آفرینک | تماشای کارتون و انیمیشن</div>
+                                    <div class="text-muted px-1 pb-2 fs-75">کودک</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.yaramobile.digitoon_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">دیجیتون (کارتون و انیمیشن و موزیک)</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">کودک</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.PepiPlay.KingsCastle-eb2d23e8-40c0-453d-9392-eab5f49356a4_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Pepi Wonder World – سرزمین عجایب پپی</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">کودک</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.boombstudio.qurancity-6d6d39a2-0dc2-4cb5-abf1-f6982cc18fde_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">شهر قرآنی</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">کودک</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.bubadu.doctorkids-dde191d8-a862-44b8-8749-1dce5d371242_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Doctor Kids – دکتر بچه‌ها</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">کودک</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.outfit7.mytalkinghank-0447a664-190d-4596-be49-d8c5c9cce5e3_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">My Talking Hank - هنک سخنگو</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">کودک</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.foofoo.coloring-f18ecb2f-c3c4-4cf0-b19e-a0cdf9977a5a_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Learning & Coloring Game - آموزش نقاشی کودکان</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">کودک</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.PepiPlay.PepiHospital-88ce0cde-4bed-4335-a72e-24f6ce105d21_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Pepi Hospital – بیمارستان پپی</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">کودک</div>  
+                                </a>       
+                            </div>
+                        </div>
+                                               
+                        <div class="swiper-button-prev">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="fa fa-angle-left"></i>
+                        </div>                      
+                </div>
+            </div>
+
+            <div class="partial-program rounded-3 mt-3">
+                <div class="partial-head parts-bb d-flex justify-content-between align-items-center p-3">
+                    <span>بهداشت و سلامتی زنان</span>
+                    <a href="#" class="d-flex align-items-center gap-2 color-2a link-green">
+                        <span>بیشتر</span><i class="fa fa-angle-left mt-1"></i>
+                    </a>
+                </div>
+                
+                <div class="swiper swipers px-3 py-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/pr.gahvare.gahvare_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">گهواره: بارداری و کودک</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">پزشکی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/app.yekzan.main_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">یک زن: ارتباط با متخصصین زنان</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">پزشکی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100">  
+                                    <img class="rounded-5 p-2" src="images/com.lunaapp-2e0ef759-5bc1-41a1-b9fe-404106d5fb2f_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">لونا | پیش‌بینی پریود و تخمک‌گذاری</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">پزشکی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.niniplus.androidapp_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">لونا | پیش‌بینی پریود و تخمک‌گذاری</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">پزشکی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.diacotdj.liom-dcc30581-75cc-4a26-82b3-ba415bf84d7f_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">لیوم - توییتر دخترونه و مدیریت پریود</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">پزشکی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/ir.duck.impo_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">ایمپو | قاعدگی، بارداری و سلامت روان</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">پزشکی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.popularapp.periodcalendar-b39f6c26-3fa1-4dc8-ab5e-5981911581cc_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Period Calendar Period Tracker</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">پزشکی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/ir.hrsamadi.pinkcalendar_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">تقویم صورتی _ ویژه بانوان</div>
+                                    <div class="text-muted px-1 pb-2 fs-75">پزشکی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.simorgh.redcalendar-75a47188-9be0-4c90-896e-7a2739e2247e_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">ماه بانو : تقویم پریود بانوان</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">پزشکی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.gweb.ir.relaxsho_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">ریلکس شو</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">پزشکی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.healthio.dorva.dorva_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">دروا | دستیار سلامتی بانوان</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">پزشکی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.clue.android-aacaad7b-87c3-4d9c-ae21-299be22518ed_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Period Tracker Clue - Ovulation and Cycle Calendar</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">پزشکی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/webgostar.company.periodcalendar_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">پریود مِیت</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">پزشکی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/se.perigee.android.seven-82aa93e8-79cf-4510-8cd4-25dbf2e346b9_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Seven - 7 Minute Workout</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">پزشکی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="w-100 slide-tr">  
+                                    <img class="rounded-5 p-2" src="images/com.period.tracker.lite-95bff2d7-0024-4771-b163-f90822eabf32_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Period Tracker</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">پزشکی</div>  
+                                </a>       
+                            </div>
+                        </div>
+                                               
+                        <div class="swiper-button-prev">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="fa fa-angle-left"></i>
+                        </div>                      
+                </div>
+            </div>
+
+            <div class="partial-program rounded-3 mt-3">
+                <div class="partial-head parts-bb d-flex justify-content-between align-items-center p-3">
+                    <span>ویترین برنامه‌ها</span>
+                </div>
+                
+                <div class="swiper vitreen-swiper py-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-img-tr w-100 h-100">  
+                                    <img class="rounded-2" src="images/0D29ED0B-7CBC-4031-A5BB-C8C8C287093B_fa_XL.webp" alt="ads"> 
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-img-tr w-100 h-100">  
+                                    <img class="rounded-2" src="images/C0C5FA1B-F129-47C6-B9E6-0BC7B5F1DD8A_fa_XL.webp" alt="ads"> 
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-img-tr w-100 h-100">  
+                                    <img class="rounded-2" src="images/7EEA3D8D-6CDC-4118-B481-BC65FEE618AC_fa_XL.webp" alt="ads"> 
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-img-tr w-100 h-100">  
+                                    <img class="rounded-2" src="images/D4A722E2-7DE5-4583-83A8-7768EC3D982C_fa_XL.webp" alt="ads"> 
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-img-tr w-100 h-100">  
+                                    <img class="rounded-2" src="images/CDBB5762-4E92-4570-9F60-531F2ABCCFDF_fa_XL.webp" alt="ads"> 
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-img-tr w-100 h-100">  
+                                    <img class="rounded-2" src="images/2A3F6293-A0F0-4287-951F-F1C2BB57A13A_fa_XL.webp" alt="ads"> 
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-img-tr w-100 h-100">  
+                                    <img class="rounded-2" src="images/6EDA8A58-E428-4395-9438-10EEDF7B2E6D_fa_XL.webp" alt="ads"> 
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-img-tr w-100 h-100">  
+                                    <img class="rounded-2" src="images/760D32DE-D693-46CF-A2E4-CFC9E83150CD_fa_XL.webp" alt="ads"> 
+                                </a>       
+                            </div>
+                            
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-img-tr w-100 h-100">  
+                                    <img class="rounded-2" src="images/CD844BEB-B1F4-4679-AA49-A0D5553C9FDD_fa_XL.webp" alt="ads"> 
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-img-tr w-100 h-100">  
+                                    <img class="rounded-2" src="images/8C4A4A04-BFD9-4D32-8864-BCC58C02C76B_fa_XL.webp" alt="ads"> 
+                                </a>       
+                            </div>
+                        </div>
+                                               
+                        <div class="swiper-button-prev">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="fa fa-angle-left"></i>
+                        </div>                      
+                </div>
+            </div>
+
+            <div class="partial-program rounded-3 mt-3">
+                <div class="partial-head parts-bb d-flex justify-content-between align-items-center p-3">
+                    <span>باشگاه رو به خونه بیار</span>
+                    <a href="#" class="d-flex align-items-center gap-2 color-2a link-green">
+                        <span>بیشتر</span><i class="fa fa-angle-left mt-1"></i>
+                    </a>
+                </div>
+                
+                <div class="swiper swipers px-3 py-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/sixpack.sixpackabs.absworkout-dd4338a1-7dc3-4cb5-b31d-bc7ce0f7d6b0_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">شکم شش تکه در ۳۰ روز - تمرین‌های Abs</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">تناسب اندام </div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/homeworkout.homeworkouts.noequipment-548f5f81-2f5b-42ba-b6fe-bdae8289f3a7_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Home Workout - تمرین در خانه بدون تجهیزات</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">تناسب اندام </div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/ir.EnerGym-2f261657-a547-44c3-9893-4e123f813086_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">انرجیم - اپ رایگان ورزش در خانه</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">تناسب اندام </div>  
+                                </a>       
+                            </div>
+                           
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/increaseheightworkout.heightincreaseexercise.tallerexercise-9e78c8d4-f7d0-4fdf-803a-c51ef88fa2bc_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Height Increase Workout</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">تناسب اندام </div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/menloseweight.loseweightappformen.weightlossformen-9539ef56-4f67-457a-b465-c451f4f16cce_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Lose Weight App for Men</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">تناسب اندام </div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/armworkout.armworkoutformen.armexercises-b6213df1-a0ef-4031-87ee-5d78593513dd_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Arm Workout - ورزش بازو</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">تناسب اندام </div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/workoutforwomen.femalefitness.womenworkout.loseweight-5f4ef0e0-6e81-4d50-a4ff-1b496352138b_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Home Workout for Women</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">تناسب اندام </div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/dumbbellworkout.dumbbellapp.homeworkout-93987f4b-5771-4053-94ee-05073c4b6fbc_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Dumbbell Workout at Home - تمرین با دمبل در خانه</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">تناسب اندام </div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/stretching.stretch.exercises.back-f704df42-5bee-4542-89af-3ccc7ca99e6a_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Stretch Exercise - Flexibility</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">تناسب اندام </div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.women.fitnessazadi-348ab647-abf1-4131-8704-47e47f80c95b_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">تناسب اندام بانوان در منزل</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">تناسب اندام </div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.women.fitnessazadi-348ab647-abf1-4131-8704-47e47f80c95b_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">تناسب اندام بانوان در منزل</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">تناسب اندام </div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/softin.my.fast.fitness-ecd566b1-eb1d-4180-9e0a-a85a70b7f72c_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Fitness & Bodybuilding</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">تناسب اندام </div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/ir.eritco.gymShowAthlete_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">جیم شو:کالری شمار رژیم ورزش در خانه</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">تناسب اندام </div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.vinditeam.fitness_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">مانکن شو (لاغری در 30 روز)</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">تناسب اندام </div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.nike.ntc-9ede476a-b6ab-4262-ab18-af54c9c89878_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Nike Training Club: Fitness</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">تناسب اندام </div>  
+                                </a>       
+                            </div>
+                        </div>
+                                               
+                        <div class="swiper-button-prev">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="fa fa-angle-left"></i>
+                        </div>                      
+                </div>
+            </div>
+
+            <div class="partial-program rounded-3 mt-3">
+                <div class="partial-head parts-bb d-flex justify-content-between align-items-center p-3">
+                    <span>برنامه‌های کم حجم</span>
+                    <a href="#" class="d-flex align-items-center gap-2 color-2a link-green">
+                        <span>بیشتر</span><i class="fa fa-angle-left mt-1"></i>
+                    </a>
+                </div>
+                
+                <div class="swiper swipers px-3 py-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.domobile.applock_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">AppLock</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.byagowi.persiancalendar_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">تقویم فارسی</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+                          
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.google.zxing.client.android-34bf0dc4-aa8b-40a2-87be-90f10591476d_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Barcode Scanner</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/org.joa.zipperplus7-b1caac4f-d0d3-48bf-afad-b3f314d9b297_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">7Zipper - File Explorer (zip, 7zip, rar)</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.pinterest-50d35c96-ee25-4835-ae34-37d5ace13776_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Pinterest</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.spotify.music-6fd4b75f-42cb-4509-99e3-d1d51a122647_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Spotify - اسپاتیفای</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.google.earth-b08f230e-d58b-4dd9-ac63-8b13832633be_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Google Earth</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.cleanmaster.mguard_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Clean Master - Antivirus, Applock & Cleaner</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.takhfifan.takhfifan-4342957a-b346-4f15-b70f-00fa74722b88_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">تخفیفان | بهترم میشه</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.devuni.flashlight-4471b439-a795-4f14-beac-7a119113a878_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Tiny Flashlight + LED</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/ir.aftabeshafa.shafadoc_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">شفاداک ShafaDoc نوبت‌دهی هوشمند</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.instagram.lite-6c51f1eb-f2f2-44c6-b908-b677543ae6cb_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Instagram Lite – اینستاگرام لایت</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.netflix.mediaclient-ab01f696-b10a-4b28-bbfd-706d1e284c67_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">Netflix - نتفلیکس</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.jetappfactory.jetaudio-8186d6d9-8d25-4602-a225-ca78456fa77e_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">jetAudio HD Music Player – پخش موسیقی جت آدیو</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">ابزارها</div>  
+                                </a>       
+                            </div>
+                        </div>
+                                               
+                        <div class="swiper-button-prev">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="fa fa-angle-left"></i>
+                        </div>                      
+                </div>
+            </div>
+
+            <div class="partial-program rounded-3 mt-3">
+                <div class="partial-head parts-bb d-flex justify-content-between align-items-center p-3">
+                    <span>برنامه‌های پرفروش</span>
+                    <a href="#" class="d-flex align-items-center gap-2 color-2a link-green">
+                        <span>بیشتر</span><i class="fa fa-angle-left mt-1"></i>
+                    </a>
+                </div>
+                
+                <div class="swiper swipers px-3 py-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/ir.divar-b3aa0567-2cf6-4f32-a442-2d36724bea97_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">دیوار</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">خرید </div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.aparat.filimo-45c1fe1f-5821-403f-9422-86651de3885e_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">فیلیمو - تماشای فیلم و سریال</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">سرگرمی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.shatelland.namava.mobile-7882c3f4-66ae-453a-8c12-a06aa6b898b6_512x512 (1).webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">نماوا - تماشای آنلاین فیلم و سریال</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">سرگرمی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/ir.filmnet.android-c24fc4c9-9e77-4e55-9a02-6ce8834c5d3c_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">فیلم‌نت - تماشای فیلم و سریال</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">سرگرمی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/ir.mservices.mybook-68bfc6fa-7fc8-4022-b487-1590df22d9b9_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">طاقچه | دانلود کتاب صوتی و الکترونیک</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">سرگرمی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.sheypoor.mobile_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">شیپور: خرید و فروش خودرو، ملک و ...</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">سرگرمی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/ir.eynakgroup.caloriemeter-b6ab492c-0063-4154-a2c1-68ad0be4f073_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">کرفس - سلامتی، رژیم و تناسب اندام</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">سرگرمی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.zabanshenas-8ebcf85d-2450-40d3-b153-a8c39e6b59f2_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">زبانشناس - آموزش زبان انگلیسی</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">سرگرمی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/ir.android.baham-aad52aeb-0e32-40eb-b61e-e98170e8c71b_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">باهم - دوستای جدید پیدا کن</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">سرگرمی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/ir.andromedaa.likebegir-7003be16-9ae3-4d55-aac1-94fe108db25f_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">لایک بگیر اینستاگرام</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">سرگرمی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/pr.gahvare.gahvare_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">گهواره: بارداری و کودک</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">سرگرمی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/asanbar.com.driverasanbar_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">راننده آسان‌بار-اعلام بار لحظه‌‌ای</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">سرگرمی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.gapfilm.app_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">گپ‌فیلم - دانلود و تماشای نامحدود</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">سرگرمی</div>  
+                                </a>       
+                            </div>
+
+                            <div class="swiper-slide"> 
+                                <a href="#" class="slide-tr w-100 p-2">  
+                                    <img class="rounded-5" src="images/com.bamooz.vocab.deutsch_512x512.webp" alt="ads">
+                                    <div class="color-2a text-overflow px-2 py-2">زبان بیاموز</div>
+                                    <div class="text-muted px-2 pb-2 fs-75">سرگرمی</div>  
+                                </a>       
+                            </div>                            
+                        </div>
+                                               
+                        <div class="swiper-button-prev">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="fa fa-angle-left"></i>
+                        </div>                      
+                </div>
+            </div>
+
+            <div class="partial-program rounded-3 mt-3">
+                <div class="partial-head parts-bb d-flex justify-content-between align-items-center p-3">
+                    <span>دسته‌بندی‌های برنامه</span>
+                    <a href="#" class="d-flex align-items-center gap-2 color-2a link-green">
+                        <span>بیشتر</span><i class="fa fa-angle-left mt-1"></i>
+                    </a>
+                </div>
+                
+                <div class="d-flex flex-wrap align-items-center gap-3 px-3 py-3">
+                    <a href="#" class="slide-tr bg-f0 d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="images/app-category-entertainment.webp" alt="app">
+                            <span class="color-2a">سرگرمی</span>
+                        </div>
+                        <div>
+                            <span>
+                                <svg viewBox="0 0 100 100" class="svg">
+                                    <path d="M10 50l50 50 10-10-40-40 40-40L60 0z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="slide-tr bg-f0 d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="images/app-category-education.webp" alt="app">
+                            <span class="color-2a">آموزش</span>
+                        </div>
+                        <div>
+                            <span>
+                                <svg viewBox="0 0 100 100" class="svg">
+                                    <path d="M10 50l50 50 10-10-40-40 40-40L60 0z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="slide-tr bg-f0 d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="images/app-category-shopping.webp" alt="app">
+                            <span class="color-2a">خرید</span>
+                        </div>
+                        <div>
+                            <span>
+                                <svg viewBox="0 0 100 100" class="svg">
+                                    <path d="M10 50l50 50 10-10-40-40 40-40L60 0z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="slide-tr bg-f0 d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="images/app-category-social.webp" alt="app">
+                            <span class="color-2a">شبکه‌های اجتماعی</span>
+                        </div>
+                        <div>
+                            <span>
+                                <svg viewBox="0 0 100 100" class="svg">
+                                    <path d="M10 50l50 50 10-10-40-40 40-40L60 0z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="slide-tr bg-f0 d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="images/app-category-photography.webp" alt="app">
+                            <span class="color-2a">عکاسی و ویدیو</span>
+                        </div>
+                        <div>
+                            <span>
+                                <svg viewBox="0 0 100 100" class="svg">
+                                    <path d="M10 50l50 50 10-10-40-40 40-40L60 0z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="slide-tr bg-f0 d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="images/app-category-finance.webp" alt="app">
+                            <span class="color-2a">امور مالی</span>
+                        </div>
+                        <div>
+                            <span>
+                                <svg viewBox="0 0 100 100" class="svg">
+                                    <path d="M10 50l50 50 10-10-40-40 40-40L60 0z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="shadow-collapse rounded-3 mt-4">
+                <div class="visible-text p-3" id="visible-text">
+                    <p class="fs">
+                        به خودتان نگاهی بیندازید، آیا برای 
+                        انجام هر کاری به گوشی خود سر نمی‌زنید؟ آیا به‌دنبال 
+                        <strong>دانلود برنامه‌های اندرویدی</strong> نیستید که کارهایتان 
+                       را آسان‌تر کنند؟ ما در بازار <strong>اپلیکیشن‌های اندروید،</strong>  
+                        برای هر موضوعی که در ذهن شماست، برنامه داریم و 
+                        امکان نصب و دانلود آن‌ها را با اینترنت نیم‌بها 
+                        و با سپر امنیت بازار برایتان فراهم کرده‌ایم.
+                    </p>
+                    <p class="fs">
+                        اپلیکیشن‌های بازار در ۲۰ دسته‌ی مختلف منظم 
+                        شده‌اند که در ادامه آن‌ها را برایتان معرفی
+                         می‌کنیم. کافی است موضوع مورد علاقه‌ی خود را 
+                        انتخاب کنید و از بین صدها برنامه هر دسته،
+                         بهترین و کاربردی‌ترین اپ را دانلود کنید.
+                         فراموش نکنید که حتما به نظرات و امتیازی 
+                         (Rating) که کاربران به برنامه‌ها داده‌اند نیز توجه کنید تا حافظه 
+                         موبایل‌تان را با اپ‌های بهتری پر کنید.
+                    </p>
+                    <div class="mt-5">
+                        <strong class="fs-strong">دانلود برنامه‌های جدید اندرویدی</strong>
+                        <p class="mt-2">
+                        در صفحه اصلی بازار می‌توانید برنامه‌های 
+                        جدید منتخب سردبیران و همینطور بروزرسانی‌های 
+                        منتخب را ببینید و از هیچ برنامه جدیدی جا 
+                        نمانید. بازی‌های جدید نیز در صفحه بازی‌های 
+                        اندرویدی بازار به‌همین ترتیب مشخص هستند.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="collapse p-3" id="collapse-menu">
+                    <div>
+                        <strong class="fs-strong">برنامه‌های شبکه‌های اجتماعی</strong>
+                        <p class="mt-2">
+                            امروز برای بسیاری از ما، گذران زندگی و کار بدون شبکه‌های 
+                            اجتماعی امکان‌پذیر مثل واتساپ، اینستاگرام، تلگرام، توییتر،
+                             یوتیوب و ... نیست. هر برنامه‌ای که دوست دارید را انتخاب و ا
+                            رتباط با جهان را آغاز کنید. جدیدترین بروزرسانی این اپ‌های 
+                            بسیار پرطرفدار نیز به محض انتشار، در بازار قرار می‌گیرند 
+                            و از طریق اطلاع‌رسانی‌ها (نوتیفیکیشن) شما را مطلع می‌کنند.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong class="fs-strong">ابزارهای اندرویدی</strong>
+                        <p class="mt-2">
+                            گوشی شما با برنامه‌های دسته‌ی 
+                            ابزارهای بازار، آچار فرانسه‌ است. از ماشین 
+                            حساب، زنگ، یادآور و تقویم گرفته تا ابزارهای
+                             افزایش سرعت گوشی، قفل برنامه‌ها، افزایش 
+                            عمر باتری، ارزیابی سرعت و مصرف اینترنت،
+                             تبدیل واحدها، بارکد ساز و بارکدخوان، 
+                            قطب‌نما، چراغ قوه، ساخت نسخه‌ی پشتیبان
+                            ، دفتر یادداشت، آنتی ویروس‌ها، حافظه‌ی
+                             ابری و بسیاری برنامه‌ی پرکاربرد دیگر.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong class="fs-strong">اپلیکیشن‌های عکاسی و ویدیو و فیلم‌برداری</strong>
+                        <p class="mt-2">
+                            اگر دنبال برنامه‌هایی هستید که از گوشی خود بهتر و
+                             بیشتر استفاده کنید، به دسته‌های شخصی‌سازی و 
+                            عکاسی و ویدیو سر بزنید. اپلیکیشن‌های تصاویر
+                             پس زمینه، قفل‌ها و برترین‌ برنامه‌های تغییر
+                             فضای گوشی را از دسته‌ی شخصی‌سازی نصب کنید.
+                             برنامه‌های ویرایش و ساخت عکس، ساخت ویدیو
+                             و چاپ عکس را نیز از دسته‌ي عکاسی و
+                             ویدیو دانلود کنید و دنیای فیلترها
+                             و ابزارهای تدوین را تجربه کنید.
+                        </p>
+                        <p>
+                            از ابزارهای شخصی‌سازی نیز غافل نشوید و گوشی خود را
+                             با آن‌ها، به سبک خود تغییر دهید. مثلا زنگ
+                             گوشی، پس زمینه و صفحه کلید شخصی خود را 
+                            دانلود کنید و با قفل فایل‌ها و برنامه‌ها
+                             کنترل موبایل خود را به دست بگیرید.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong class="fs-strong">برنامه‌های امور مالی</strong>
+                        <p class="mt-2">
+                            حوزه‌ی سرمایه و پول هر روز در حال تغییر و پیشرفت است. دسته‌ی 
+                            امور مالی برنامه‌های کاربردی‌ای مثل رمز پویا، روش‌های انتقال 
+                            پول، همراه بانک‌ها، حسابداری شخصی تا برنامه‌های تحلیلی بازار 
+                            بورس و سرمایه‌گذاری، فروش سهام عدالت، قوانین مالی و محاسبات 
+                            حقوقی، محاسبه سود سپرده و وام را پوشش می‌دهد. همینطور با کمک 
+                            برنامه‌های حسابداری شخصی، تحلیل بازار بورس و مالی می‌توانید 
+                            سرمایه‌ خود را مدیریت کنید و دخل و خرج‌تان را محاسبه کنید.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong class="fs-strong">اپ‌های آموزشی</strong>
+                        <p class="mt-2">
+                            آموزش مجازی این روزها حرف اول را می‌زند. اپلیکیشن‌هایی که 
+                            بتوانند سریع‌ترین و شیرین‌ترین روش یادگیری موضوعات مثل زبان انگلیسی، 
+                            آشپزی، درس‌های از دبستان تا کنکور، برنامه‌نویسی و بسیاری موضوعات 
+                            دیگر را در دسترس قرار دهند، بیشترین طرفدار را دارند. این دسته، 
+                            دنیایی از اپلیکیشن‌هاست که می‌توانید با دانلود آن‌ها هر موضوعی 
+                            را یاد بگیرید. معروف‌ترین و پرطرفدارترین برنامه این دسته هم 
+                            اپلیکیشن شاد مدارس است که دانش‌آموزان علاقه زیادی به آن دارند.(!)
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong class="fs-strong">برنامه‌های موسیقی و صداگذاری</strong>
+                        <p class="mt-2">
+                            رنامه‌های اندروید موسیقی، شما
+                             را به آخرین آلبوم‌ها و آهنگ‌های روز متصل می‌کند. با کمک این 
+                            اپ‌ها می‌توانید پلی‌لیست‌ شخصی‌های خود را بسازید، روی ویدیوهای
+                             خود صدا بگذارید و اپلیکیشن‌های تغییر صدای مختلف را ببینید.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong class="fs-strong">بازار کودک</strong>
+                        <p class="mt-2">
+                            بازی و یادگیری و برنامه، قصه، بازی‌های شاد و سرگرم کننده و برترین 
+                            اپلیکیشن‌های کودک در دسته‌ی کودک بازار، ویژه کودکان شما است. 
+                            امروز ارتباط کودکان با دنیای تکنولوژی غیرقابل انکار است. 
+                            از دسته‌ی کودک براحتی انتخاب کنید که دوست دارید کودک
+                             شما با کدام برنامه‌‌ی اندرویدی، بازی کند و یاد بگیرد.
+                        </p>
+                        <p>
+                            با فعال کردن «بازار کودک» از «بازار من» می‌توانید با خیال
+                             راحت گوشی هوشمند خود را در اختیار کودکان قرار دهید و خیالتان 
+                            راحت باشد که محتواهای نامناسب برای فرزندتان نمایش داده نمی‌شود.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong class="fs-strong">اپ‌های سرگرمی</strong>
+                        <p class="mt-2">
+                            داشتن گوشی هوشمند در عین حال که کاربردی
+                             است، سرگرم کننده هم هست. برنامه‌های دسته‌ی سرگرمی طیف 
+                            متفاوتی از اپلیکیشن‌هایی است که می‌توانید بسته به حال 
+                            و لحظه از بین آنها انتخاب کنید؛ اهل نقاشی دیجیتال 
+                            هستید؟ دوست دارید فیلم و سریال تماشا کنید؟ هر چیزی
+                             که بخواهید را می‌توانید در این دسته‌بندی پیدا کنید.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong class="fs-strong">برنامه‌های ورزشی</strong>
+                        <p class="mt-2">
+                            با برنامه‌های اندرویدی بازار ببینید در دنیای ورزش چه می‌گذرد.
+                             فوتبال، والیبال، لیگ برتر و جام حذفی، المپیک و حاشیه‌ی 
+                            دنیای ورزش، پخش زنده و هیاهوی بازی‌های فینال، برنامه‌های 
+                            اخبار و پخش زنده ورزشی، همه و همه در بازار موجود هستند.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong class="fs-strong">اپلیکیشن‌های مذهبی</strong>
+                        <p class="mt-2">
+                            دسته‌ی مذهبی طیف گسترده‌ای ازبرنامه‌
+                            های کاربردی و تخصصی این حوزه را در خود جای داده است. برنامه‌های
+                             پرکاربرد مذهبی مانند تقویم‌های اذان‌گو و اوقات شرعی و برنامه‌های 
+                            آموزش حفظ و تلاوت قرآن، قرآن کتبی و صوتی، برنامه‌های ختم قرآن و 
+                            حکایت‌های مذهبی را در دسته‌ی مذهبی به راحتی پیدا و دانلود کنید.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong class="fs-strong">برنامه‌های سفر</strong>
+                        <p class="mt-2">
+                            بازار برنامه‌های اندروید، مقصد بی انتهایی است از 
+                            اپلکیشن‌هایی که سفر کردن را راحت‌ترمی‌کند. خرید 
+                            بلیط هواپیما و قطار تا انتخاب محل اقامت و
+                             تورهای مسافرتی، گردشگری و بوم‌گردی برنامه
+                             می‌خواهد. در این سفر برنامه‌های مسیریاب،
+                        </p>
+                        <p>
+                            ز نقشه‌های مسیریاب نیز برای جا‌به‌جایی در شهر
+                             کمک بگیرید. با اپلیکیشن‌های تاکسی‌های آنلاین در شهر رفت 
+                            و آمد کنید. با دانلود برنامه‌های نمایش خلافی خودرو و 
+                            خدمات تعمیر خودرو، با خیال راحت بحران‌ها را مدیریت کنید.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong class="fs-strong">کتاب‌ها و مطبوعات اندرویدی</strong>
+                        <p class="mt-2">
+                            اگر اهل
+                             کتاب‌ هستید، این دسته کتابخانه‌ای صوتی و آنلاین برای شما است.
+                             اپلیکیشن‌های پادکست‌، نشریات انگلیسی زبان وآخرین اخبار روز 
+                            در این دسته جمع شده‌اند. برنامه‌های کتابگردی، پادکست‌ها، خرید 
+                            آنلاین کتاب، اخبار رسمی روز، داستان‌ها و قصه‌ها برای کودکان و
+                             نشریات انگلیسی زبان، همگی را می‌توانید از بازار دانلود کنید.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong class="fs-strong">برنامه‌های پزشکی و سلامت و تناسب اندام</strong>
+                        <p class="mt-2">
+                            سلامتی و پزشکی هم در گوشی 
+                            هوشمند جا دارد. برنامه‌های مراقبت از سلامتی و اطلاعات پزشکی و گرفتن
+                             نوبت دکتر و کمک‌های اولیه یک پزشک همراه است. سلامت، برنامه‌ریزی 
+                            هم می‌خواهد. با اپلیکیشن‌های دسته‌ی تناسب اندام به راحتی برای
+                             سلامتی و بدن خود برنامه بریزید. با دانلود برنامه‌های تغذیه 
+                            و رژیم برای خود هدف گذاری کنید. راحت‌تر بخوابید، با برنامه
+                             پیاده‌روی کنید و تمرین‌های روزانه و بدن‌سازی و ورزش خود را
+                             با کارهای روزانه‌ای مانند خرید هفتگی و روزانه تنظیم کنید.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong class="fs-strong">برنامه‌های خرید اینترنتی</strong>
+                        <p class="mt-2">
+                            برای خرید هم می‌توانید سراغ بازار بیایید و آنلاین مواد
+                             غذایی، گوشی، خانه
+                              و اتومبیل بخرید. آخرین و بهترین قیمت‌ها را رصد کنید و
+                              از بین هزاران کالای موجود در سراسر ایران انتخاب کنید.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong class="fs-strong">برنامه‌های آب‌ و هوا</strong>
+                        <p class="mt-2">
+                            رنامه‌های آب و هوا 
+                            شما را در جریانی تغییرات لحظه‌ای و اخبار روز هواشناسی 
+                            قرار می‌دهد. در عین حال می‌توانید کیفیت هوای محل زندگی 
+                            خود را مداوم رصد کنید، تغییرات زمین و آمادگی پس از 
+                            حوادثی مانند زلزله و سیل نیز نیاز به آموزش دارد که 
+                            تمامی این اطلاعات در برنامه‌های این دسته در دسترس است.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong class="fs-strong">برنامه‌های آشپزی Android</strong>
+                        <p class="mt-2">
+                            آب و هوای 
+                            دنیای آشپزی با دانلود اپلیکیشن‌های این دسته مزده‌دارتر می‌شود. 
+                            برنامه‌های آشپزی بازار برای هرسلیقه‌‌ای با هر میزان دسترسی 
+                            به مواد غذایی دستور غذایی دارد. آنلاین با گوشی اندروید
+                             هوشمند خود مواد غذایی و میوه بخرید. با دستورهای جدید، 
+                            پخت و پز کنید. با برنامه‌های آشپزی و رستوران، رستوران‌های 
+                            جدید را بشناسید، غذا سفارش دهید و رستوران‌گردی کنید.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong class="fs-strong">اپلیکیشن‌های سبک زندگی</strong>
+                        <p class="mt-2">
+                            هر فردی در طول روز برای بهتر و راحت‌تر زندگی کردن 
+                            به برنامه‌های دسته‌ی سبک زندگی نیاز دارد. در دسته‌ی سبک 
+                            زندگی می‌توانید برنامه‌های اندروید سلامت روان و خوشناسی 
+                            را دانلود کنید؛ یا سری به برنامه‌های کاربردی بزنید
+                             و هر سرویس آنلاینی که در طول روز به آن نیاز دارید از
+                             خشکشویی تا تعمیرات خانه و طراحی داخلی را پیدا کنید.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center" id="btn-angle">                 
+                        <i class="fa fa-angle-down" id="angle"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-footer content-footer" id="footer">
+        <section class="container">
+            <div class="border-bot py-5 d-flex justify-content-between">
+                <div class="">
+                    <h5>بازار، نخستین و پرمخاطب‌ترین فروشگاه ایرانی برنامه‌ها و بازی‌های موبایلی دنیای اندروید</h5>
+                    <p class="text-muted mt-4">
+                        صد‌ها هزار بازی ایرانی و خارجی دیتادار یا بدون دیتا را با ترافیک نیم‌بها نصب کنید و به سادگی خرید درون‌ برنامه‌ای انجام دهید. بازار مجهز به سپر امنیت است که برنامه‌ها را توسط آنتی ویروس‌ها بررسی کرده و به محض شناسایی برنامه‌ی مخرب، به کاربر اعلام می‌کند که آن برنامه را از دستگاه خود پاک کند.
+                    </p>
+                </div>
+                <div class="d-flex foot-description gap-4 p-3 justify-content-between align-items-center rounded-3">
+                    <div>
+                        <img src="images/footer-download.webp" alt="ads">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h6>دانلود اپلیکیشن بازار</h6>
+                        <p class="fs-75 text-muted">پرمخاطب‌ترین اپ‌استور (اندروید) فارسی‌زبانان</p>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="color-green btn btn-foot">نسخهٔ اندروید</a>
+                            <a href="#" class="color-green btn btn-foot">نسخهٔ اندروید TV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between py-5">
+                <div class="d-flex gap-link">
+                    <div class="d-flex flex-column gap-3">
+                        <a href="#" class="color-2a fs-link link-green">نصب بازار</a>
+                        <a href="#" class="color-2a fs-link link-green">بازی اندروید</a>
+                        <a href="#" class="color-2a fs-link link-green">برنامه اندروید</a>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                        <a href="#" class="color-2a fs-link link-green">توسعه‌دهندگان بازار</a>
+                        <a href="#" class="color-2a fs-link link-green">فرصت‌های شغلی</a>
+                        <a href="#" class="color-2a fs-link link-green">نشان دریافت از بازار</a>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                        <a href="#" class="color-2a fs-link link-green">شرایط استفاده</a>
+                        <a href="#" class="color-2a fs-link link-green">حریم خصوصی</a>
+                        <a href="#" class="color-2a fs-link link-green">پشتیبانی</a>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                        <a href="#" class="color-2a fs-link link-green">بلاگ بازار</a>
+                        <a href="#" class="color-2a fs-link link-green">خبرها و بیانیه‌های بازار</a>
+                        <a href="#" class="color-2a fs-link link-green">بلاگ فنی بازار</a>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                        <a href="#" class="color-2a fs-link link-green">تبلیغات در بازار</a>
+                        <a href="#" class="color-2a fs-link link-green">درباره ما</a>
+                        <a href="#" class="color-2a fs-link link-green">درباره ما</a>
+                    </div>
+                </div>
+
+                <div class="icons d-flex gap-3">
+                    <a href="#" class="border-ic rounded-3 p-2">
+                        <img class="icon-h" src="images/81.png" alt="ads">
+                    </a>
+                    <a href="#" class="border-ic rounded-3 p-2">
+                        <img class="icon-h" src="images/Samandehi.webp" alt="ads">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="border-bot"></div>
+        
+        <section class="container">
+            <div class="py-3 d-flex justify-content-between align-items-center">
+                <div>
+                    <p class="fs-75 my-auto">تمامی حقوق این سایت متعلق به شرکت آوای همراه هوشمند هزاردستان (فروشگاه برنامه‌های موبایلی اندروید بازار) است.</p>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                    <a href="#">
+                        <svg width="20" height="20" class="hover-1">
+                            <path d="M4.375 2.188a2.188 2.188 0 11-4.375 0 2.188 2.188 0 014.375 0zM4.375 20V5.625H0V20h4.375zM15.002 5.625c-2.502 0-3.196.82-3.752 1.875V5.625H6.875V20h4.375v-8.125c0-1.25 0-2.5 2.188-2.5 2.187 0 2.187 1.25 2.187 2.5V20H20v-8.125c0-3.75-.625-6.25-4.998-6.25z" fill="#616161"></path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="20" height="20" class="hover-1">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 4.864a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666z" fill="#616161"></path><path d="M15.338 5.862a1.2 1.2 0 100-2.4 1.2 1.2 0 000 2.4z" fill="#616161"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C7.284 0 6.944.012 5.877.06 4.813.11 4.086.278 3.45.525a4.902 4.902 0 00-1.772 1.153A4.902 4.902 0 00.525 3.45C.278 4.086.109 4.813.06 5.877.011 6.944 0 7.284 0 10s.011 3.056.06 4.123c.049 1.064.218 1.791.465 2.427a4.902 4.902 0 001.153 1.772 4.901 4.901 0 001.772 1.153c.636.247 1.363.416 2.427.465 1.067.048 1.407.06 4.123.06s3.056-.012 4.123-.06c1.064-.049 1.791-.218 2.427-.465a4.902 4.902 0 001.772-1.153 4.902 4.902 0 001.153-1.772c.247-.636.416-1.363.465-2.427.048-1.067.06-1.407.06-4.123s-.012-3.056-.06-4.123c-.049-1.064-.218-1.791-.465-2.427a4.901 4.901 0 00-1.153-1.772A4.902 4.902 0 0016.55.525C15.914.278 15.187.109 14.123.06 13.056.012 12.716 0 10 0zm0 1.802c2.67 0 2.986.01 4.04.058.976.045 1.505.208 1.858.344.466.182.8.399 1.15.748.35.35.566.684.748 1.15.137.353.3.882.344 1.857.048 1.055.058 1.37.058 4.041 0 2.67-.01 2.986-.058 4.04-.045.976-.207 1.505-.344 1.858-.182.466-.398.8-.748 1.15-.35.35-.683.566-1.15.748-.353.137-.882.3-1.857.344-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-.976-.045-1.505-.207-1.858-.344a3.098 3.098 0 01-1.15-.748 3.097 3.097 0 01-.748-1.15c-.137-.353-.3-.882-.344-1.857-.048-1.055-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.045-.976.207-1.505.344-1.858.182-.466.399-.8.748-1.15.35-.35.684-.566 1.15-.748.353-.136.882-.3 1.857-.344 1.055-.048 1.37-.058 4.041-.058z" fill="#616161"></path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="20" height="16" class="hover-1">
+                            <path d="M20 1.896a8.406 8.406 0 01-2.356.637A4.06 4.06 0 0019.449.3c-.793.462-1.67.8-2.606.98A4.131 4.131 0 0013.846 0C11.58 0 9.744 1.808 9.744 4.037c0 .317.034.625.106.921A11.695 11.695 0 011.39.738a3.986 3.986 0 00-.555 2.029c0 1.4.725 2.637 1.827 3.362A4.057 4.057 0 01.8 5.625v.05c0 1.958 1.416 3.587 3.293 3.958a4.197 4.197 0 01-1.08.142c-.263 0-.522-.025-.772-.075.521 1.604 2.039 2.77 3.836 2.804A8.317 8.317 0 010 14.175 11.637 11.637 0 006.285 16c7.553 0 11.68-6.154 11.68-11.492 0-.175-.004-.35-.012-.52A8.345 8.345 0 0020 1.895z" fill="#616161"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+  
+    <section class="fixed-footer">
+        <div class="container-fluid">
+            <div class="menus d-flex justify-content-center align-items-center">
+                <div class="d-flex flex-column align-items-center w-100">
+                    <svg width="24" height="24">
+                        <path d="M22.956 16l-1.168-7.536a4.24 4.24 0 00-1.168-2.357 4.607 4.607 0 00-2.266-1.321 30.328 30.328 0 00-3.16-.572A26.944 26.944 0 0012 4c-.893 0-2.026.071-3.194.214-1.168.143-2.267.357-3.16.536-.893.25-1.683.714-2.266 1.357-.584.643-1.03 1.429-1.168 2.357L1.044 16c-.172 1.071.172 2.036.79 2.786A3.485 3.485 0 004.513 20a4.04 4.04 0 002.301-.75 3.84 3.84 0 001.442-1.929l.138-.357.103-.393h7.006l.103.393.137.357a3.84 3.84 0 001.443 1.929c.653.5 1.477.75 2.301.75a3.485 3.485 0 002.679-1.214c.618-.75.962-1.75.79-2.786zm-1.614 2.036c-.447.535-1.134.821-1.855.821-.584 0-1.202-.178-1.683-.536a3.022 3.022 0 01-1.03-1.357l-.137-.393-.104-.392c-.171-.429-.583-.75-1.03-.75H8.497c-.447 0-.859.321-1.03.75l-.103.392-.138.393c-.206.536-.55 1-1.03 1.357-.481.358-1.1.536-1.683.536-.721 0-1.408-.286-1.855-.821a2.287 2.287 0 01-.515-1.857l.584-3.786.55-3.75c.137-.643.412-1.25.892-1.75a3.238 3.238 0 011.752-1c.79-.214 1.855-.393 3.022-.536 1.168-.143 2.233-.214 3.057-.214.824 0 1.889.071 3.057.214 1.167.143 2.232.322 3.022.536h.034c.653.178 1.271.5 1.718 1 .48.5.755 1.107.893 1.75l.549 3.75.584 3.821a2.245 2.245 0 01-.515 1.822zm-5.495-6.322a.813.813 0 00-.584.25.879.879 0 00-.24.607c0 .25.102.465.24.608.137.142.343.25.584.25.24 0 .446-.108.583-.25a.88.88 0 00.24-.608.879.879 0 00-.24-.607.813.813 0 00-.583-.25zm2.198-3.428a.813.813 0 00-.584.25.879.879 0 00-.24.607c0 .25.102.464.24.607.137.143.343.25.584.25.24 0 .446-.107.583-.25a.879.879 0 00.24-.607.879.879 0 00-.24-.607.813.813 0 00-.583-.25zm-8.243 2H8.153V8.57A.554.554 0 007.603 8c-.308 0-.549.25-.549.571v1.715H5.406c-.31 0-.55.25-.55.571 0 .322.24.572.55.572h1.648v1.714c0 .321.24.571.55.571.309 0 .55-.25.55-.571v-1.714h1.648c.31 0 .55-.25.55-.572a.554.554 0 00-.55-.571z" fill="#717485"></path>
+                    </svg>
+                    <a href="#" class="text-muted">بازی</a>
+                </div>
+
+                <div class="d-flex flex-column align-items-center w-100">
+                    <div class="tab-item-2"></div>
+
+                    <svg width="24" height="24" class="mt-2">
+                        <path d="M5.482 2A3.477 3.477 0 002 5.472v2.176a3.477 3.477 0 003.482 3.473h2.182a3.477 3.477 0 003.482-3.473V5.472A3.477 3.477 0 007.663 2H5.482zM16.336 2a3.477 3.477 0 00-3.481 3.472v2.176a3.477 3.477 0 003.481 3.473h2.182A3.477 3.477 0 0022 7.648V5.472A3.477 3.477 0 0018.518 2h-2.182zM5.482 12.825A3.477 3.477 0 002 16.297v2.176a3.477 3.477 0 003.482 3.473h2.182a3.477 3.477 0 003.482-3.473v-2.176a3.477 3.477 0 00-3.482-3.472H5.482zM16.336 12.88a3.477 3.477 0 00-3.481 3.472v2.176A3.477 3.477 0 0016.335 22h2.182A3.477 3.477 0 0022 18.528v-2.176a3.477 3.477 0 00-3.482-3.473h-2.182z" fill="#20222A"></path>
+                    </svg>
+
+                    <a href="#" class="text-muted">برنامه</a>
+                </div>
+
+                <div class="d-flex flex-column align-items-center w-100">
+                    <svg width="24" height="24">
+                        <path d="M11.57 16.844A.588.588 0 0012 17c.156 0 .313-.04.43-.156l5.625-5a.662.662 0 00.039-.899.662.662 0 00-.899-.039l-4.57 4.063V2.625A.617.617 0 0012 2a.617.617 0 00-.625.625v12.344l-4.57-4.063a.662.662 0 00-.899.04.662.662 0 00.04.898l5.624 5zM19.5 14.5h-1.875a.617.617 0 00-.625.625c0 .352.273.625.625.625H19.5c.703 0 1.25.547 1.25 1.25v2.5c0 .703-.547 1.25-1.25 1.25h-15c-.703 0-1.25-.547-1.25-1.25V17c0-.703.547-1.25 1.25-1.25h1.875A.617.617 0 007 15.125a.617.617 0 00-.625-.625H4.5A2.518 2.518 0 002 17v2.5C2 20.867 3.133 22 4.5 22h15c1.367 0 2.5-1.133 2.5-2.5V17c0-1.367-1.133-2.5-2.5-2.5zm-.313 3.75a.95.95 0 00-.937-.938.95.95 0 00-.938.938c0 .508.43.938.938.938a.95.95 0 00.938-.938z" fill="#717485"></path>
+                    </svg>
+                    <a href="#" class="text-muted">نصب بازار</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="swiper js/swiper bundle min.js"></script>
+<script src="js/script.js"></script>
+</html>
+
+
